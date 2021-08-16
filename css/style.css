@@ -1,0 +1,613 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PT Sans", sans-serif;
+}
+p {
+  font-family: "PT Sans", sans-serif;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/************************************** Media Query *****************************/
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 640px) {
+  .header-section {
+    width: 100%;
+  }
+}
+
+/************************************header section start**********************************/
+
+.header-section {
+  width: 100%;
+  padding: 30px 80px;
+  background: radial-gradient(#fff, #ffd6d6);
+  position: relative;
+}
+
+.product {
+  background: transparent;
+}
+
+.bg-light {
+  background-color: transparent !important;
+}
+
+.header-section .navbar-wrapper {
+  width: 100%;
+  position: relative;
+  background: rgb(0, 0, 0, 0.5);
+  z-index: 15;
+}
+
+.header-section .row {
+  width: 100%;
+  margin: 0px;
+}
+
+.header-section .row .second {
+  text-align: end;
+}
+
+.header-section .nav-item {
+  margin-left: 5px;
+}
+
+.header-section .nav-item .img-fluid {
+  max-width: 15%;
+}
+
+.header-section img {
+  width: 40%;
+  height: auto;
+}
+
+.header-section .banner {
+  padding: 100px 0px;
+  width: 100%;
+}
+
+.banner .row {
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.banner .text-inner {
+  padding: 150px 0px;
+  text-align: start;
+}
+
+.banner .text-inner h1 {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  line-height: 60px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: start;
+}
+
+.banner .text-inner p {
+  color: #555555;
+  margin-bottom: 25px;
+  text-align: start;
+}
+
+.btn {
+  background: #ff523b;
+  padding: 10px 30px;
+  border: 0px;
+  border-radius: 30px;
+  text-align: center;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+  background: transparent;
+  color: #ff523b;
+  border: 1px solid #ff523b;
+}
+
+.banner .img-inner {
+  text-align: center;
+}
+
+.banner .img-inner img {
+  width: 100%;
+}
+
+/******************************feater section start**********************/
+.feature-section {
+  width: 100%;
+  padding: 40px 80px;
+  position: relative;
+}
+
+.small-container {
+  padding: 0px 80px;
+}
+
+.feature-section .card {
+  padding: 20px 0px;
+  border: 0px;
+  border-radius: 0px !important;
+}
+
+/*************************feature product section start************************/
+.feature-product {
+  width: 100%;
+  padding: 40px 80px;
+  position: relative;
+}
+
+.feature-product .title {
+  text-align: center;
+  margin: 0px 0px 80px;
+  color: #555;
+  line-height: 60px;
+  position: relative;
+}
+
+.feature-product .second {
+  margin-top: 60px;
+}
+
+.feature-product .title::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 5px;
+  color: #ff523b;
+  border-radius: 5px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feature-product .card {
+  border: 0px;
+  border-radius: 0px !important;
+  transition: 0.5s;
+}
+
+.feature-product .card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-product h5 {
+  font-weight: normal;
+  color: #555;
+  margin: 0px;
+}
+
+.feature-product p {
+  font-size: 14px;
+  margin: 0px;
+}
+
+.feature-product .card-body .fa {
+  color: #ff523b;
+}
+
+/*************************************************offer section starts***************************/
+
+.offer {
+  width: 100%;
+  padding: 30px 80px;
+  background: radial-gradient(#fff, #ffd6d6);
+  position: relative;
+}
+
+.offer img {
+  padding: 20px 0px;
+}
+
+.offer .text-inner {
+  padding: 100px 0px;
+  text-align: start;
+}
+
+.offer .text-inner h6 {
+  color: #555;
+}
+
+.offer .text-inner h1 {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  line-height: 60px;
+  font-weight: 700;
+  margin: 20px 0px;
+}
+
+.offer .text-inner p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/******************************************** Testimonial section starts *****************************/
+.Testimonial {
+  width: 100%;
+  padding: 60px 80px;
+  position: relative;
+}
+
+.Testimonial .card {
+  border: 0px;
+  border-radius: 0px !important;
+  transition: 0.5s;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.Testimonial .card:hover {
+  transform: translateY(-10px);
+}
+
+.Testimonial .card .fa-quote-left {
+  color: #ff523b;
+  font-size: 34px;
+}
+
+.Testimonial img {
+  text-align: center;
+  border-radius: 50%;
+  width: 30%;
+  margin-top: 20px;
+}
+
+.Testimonial p {
+  color: #555;
+  font-size: 14px;
+  margin: 10px 0px;
+}
+
+.Testimonial .fa {
+  color: #ff523b;
+}
+
+.Testimonial h4 {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  line-height: 28px;
+  font-weight: 700;
+  color: #555;
+}
+
+/*******************************************brand section starts**************************/
+.brand {
+  width: 100%;
+  padding: 60px 80px;
+  position: relative;
+}
+
+.brand img {
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+.brand img:hover {
+  filter: grayscale(0);
+}
+
+/******************************************** footer section starts **************************************/
+.footer-section {
+  width: 100%;
+  padding: 60px 80px;
+  background-color: #000;
+  color: #8a8a8a;
+  position: relative;
+}
+
+.footer-section h4 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.footer-section p {
+  margin-bottom: 20px;
+}
+
+.footer-section .first {
+  width: 140px;
+}
+
+.footer-section .second {
+  width: 140px;
+}
+
+.footer-section .whitelogo {
+  text-align: center;
+}
+.footer-section .second-para {
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.footer-section ul {
+  list-style: none;
+  text-align: center;
+}
+
+.footer-section .text-inner {
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+}
+
+.footer-section hr {
+  background: #b5b5b5;
+  border: none;
+  height: 1px;
+  margin: 20px 0px;
+}
+
+.footer-section .copyright {
+  text-align: center;
+}
+
+/**********************************All Products feature section starts**********************************/
+
+.special {
+  margin: 60px 80px 20px;
+}
+
+select {
+  width: 20%;
+  height: 20%;
+  padding: 10px;
+  border: 1px solid #ff523b;
+}
+
+select:focus {
+  outline: none;
+}
+
+.page-btn {
+  margin: 30px 0px;
+}
+
+.page-btn span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  text-align: center;
+  border: 1px solid #ff523b;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.page-btn span:hover {
+  background: #ff523b;
+  color: #fff;
+}
+
+/***************************** Product details section statrs **************************/
+.product-details {
+  width: 100%;
+  padding: 80px 0px;
+}
+
+.details {
+  margin-bottom: 60px;
+}
+
+.product-details .second {
+  padding-left: 20px;
+}
+
+.product-details .title {
+  text-align: start;
+  margin: 0px 0px 20px;
+  font-size: 20px;
+  color: #555;
+  line-height: 30px;
+  position: relative;
+}
+
+.product-details h1 {
+  font-size: 44px;
+  font-family: "Poppins", sans-serif;
+  line-height: 54px;
+  font-weight: 700;
+  margin: 0px 0px 20px;
+}
+
+.product-details p {
+  color: #555;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0px 0px 20px;
+}
+
+.product-details select {
+  width: 30%;
+  height: 6%;
+  font-size: 14px;
+  line-height: 28px;
+  padding: 0px 10px;
+  margin: 0px 0px 20px;
+  border: 1px solid #ff523b;
+}
+
+.product-details select {
+  outline: none;
+}
+
+.product-details input {
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  border: 1px solid #ff523b;
+}
+
+.product-details h3 {
+  text-align: start;
+  margin: 0px 0px 20px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 30px;
+  position: relative;
+}
+
+.product-details .fa {
+  color: #ff523b;
+  margin-left: 10px;
+}
+
+/******************************************* account page starts *************************************/
+.account {
+  width: 100%;
+  padding: 80px 0px;
+  background: radial-gradient(#fff, #ffd6d6);
+}
+
+.form-container {
+  background: #fff;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 20px 0px;
+  margin: auto;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-container span {
+  width: 100px;
+  font-weight: bold;
+  padding: 0px 10px;
+  color: #555;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.form-btn {
+  display: inline-block;
+}
+
+.form-container form {
+  max-width: 300px;
+  padding: 0px 20px;
+  position: absolute;
+  top: 130px;
+}
+
+.form-container form input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0px;
+  padding: 0px 10px;
+  border: 1px solid #ccc;
+}
+
+.form-container form a {
+  font-size: 16px;
+  margin-top: 8px;
+  text-decoration: none;
+  color: #555;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 5px 20px;
+  margin: 20px 0px;
+  font-size: 17px;
+  
+}
+
+#LoginForm {
+  left: -300px;
+}
+
+#RegForm {
+  left: 0px;
+}
+
+#indicator {
+  background: #ff523b;
+  border: none;
+  width: 50%;
+  height: 3px;
+}

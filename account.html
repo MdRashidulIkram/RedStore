@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Products Details | E Commerce</title>
+</head>
+
+<body>
+
+    <!-- header section start -->
+    <div class="header-section product">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="index.html"><img src="./images/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="col-md-6 second">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                                <li class="nav-item active">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="products.html">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="account.html">Account</a>
+                                </li>
+                                <li class="nav-item">
+                                    <img src="./images/cart.png" class="img-fluid" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </nav>
+
+
+    </div>
+
+    <!-- account page starts -->
+    <div class="account">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./images/image1.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-6">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="registration()">Registration</span>
+                            <hr id="indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="button" class="btn btn-primary btn-lg">Log in </button>
+                            <a href="#">forgot password?</a>
+                        </form>
+
+                        <form id="Regform">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="button" class="btn btn-primary btn-lg">Register </button>
+                        </form>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer section starts -->
+    <div class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Download Our App</h4>
+                    <p>Download app for Android and Ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="./images/play-store.png" class="first" alt="">
+                        <img src="./images/app-store.png" class="second" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 whitelogo">
+                    <img src="./images/logo-white.png" alt="">
+                    <p class="second-para">Our purpose is to sustainably make the pleasure and benefits of sports
+                        accessible to
+                        many</p>
+                </div>
+                <div class="col-md-2">
+                    <div class="text-inner">
+                        <h4>Useful Links</h4>
+                    </div>
+
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <div class="text-inner">
+                        <h4>Follow Us</h4>
+                    </div>
+
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copyright 2021 -Redstore</p>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        </script>
+
+    <!-- js for toggle form -->
+    <script>
+        var Login = document.getElementById("LoginForm");
+        var Registration = document.getElementById("Regform");
+        var Indicator = document.getElementById("indicator");
+
+        function login() {
+            Login.style.transform = "translateX(300px)"
+            Registration.style.transform = "translateX(300px)"
+            Indicator.style.transform = "translateX(0)"
+        }
+
+        function registration() {
+            Registration.style.transform = "translateX(0px)";
+            Login.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(105px)"
+        }
+    </script>
+
+
+
+</body>
+
+</html>
